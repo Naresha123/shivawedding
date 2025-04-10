@@ -1,114 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiva ❤️ Anushka</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background: linear-gradient(to right, #fff0f5, #ffe4e1);
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #333;
-        }
-        header {
-            background-color: #76a08d;
-            color: white;
-            padding: 40px 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 2rem;
-        }
-        .couple-names {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #fff;
-            margin-top: 10px;
-        }
-        .quote {
-            font-style: italic;
-            margin-top: 5px;
-            font-size: 1.1rem;
-        }
-        .section {
-            padding: 40px 20px;
-        }
-        .section h2 {
-            color: #d32f2f;
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
-        p {
-            font-size: 1.1rem;
-        }
-        .countdown {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #880e4f;
-        }
-        footer {
-            background-color: #222;
-            color: white;
-            padding: 15px;
-            font-size: 1rem;
-        }
-        img {
-            width: 300px;
-            border-radius: 15px;
-            margin-top: 20px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shiva Kumar ❤️ Pavithra</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fff0f5, #ffe4e1);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #76a08d;
+      color: white;
+      padding: 40px 20px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .couple-names {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .quote {
+      font-style: italic;
+      margin-top: 5px;
+      font-size: 1.1rem;
+    }
+    .section {
+      padding: 40px 20px;
+    }
+    .section h2 {
+      color: #d32f2f;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+    .countdown {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #880e4f;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      padding: 15px;
+      font-size: 1rem;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .images img {
+      width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>ನೀವು ಬನ್ನಿ, ನಮ್ಮ ಸಂತೋಷದ ಕ್ಷಣವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ!</h1>
-        <div class="couple-names">Shiva ❤️ Anushka Sharma</div>
-        <p class="quote">You're Invited!</p>
-    </header>
+  <header>
+    <h1>ನೀವು ಬನ್ನಿ, ನಮ್ಮ ಸಂತೋಷದ ಕ್ಷಣವನ್ನು ಹಂಚಿಕೊಳ್ಳಿ!</h1>
+    <div class="couple-names">Shiva Kumar ❤️ Pavithra</div>
+    <p class="quote">You're Invited!</p>
+  </header>
 
-    <div class="section">
-        <h2>💍 Wedding Details 💍</h2>
-        <p><strong>Date:</strong> April 14, 2025</p>
-        <p><strong>Time:</strong> 9:30 AM</p>
-        <p><strong>Venue:</strong> Sri Veerabhadreshwara Temple</p>
+  <div class="section">
+    <h2>💍 Wedding Details 💍</h2>
+    <p><strong>Date:</strong> April 14, 2025</p>
+    <p><strong>Time:</strong> 8:45 AM to 9:05 AM</p>
+    <p><strong>Venue:</strong> Sri Veerabhadreshwara Temple</p>
+  </div>
+
+  <div class="section">
+    <h2>⏳ Countdown to the Big Day</h2>
+    <div class="countdown" id="countdown"></div>
+  </div>
+
+  <div class="section">
+    <div class="images">
+      <img src="ss1.jpg" alt="Shiva Kumar">
+      <img src="ss2.jpg" alt="Pavithra">
     </div>
+  </div>
 
-    <div class="section">
-        <h2>⏳ Countdown to the Big Day</h2>
-        <div class="countdown" id="countdown"></div>
-    </div>
+  <footer>
+    Made with ❤️ by Naresh
+  </footer>
 
-    <div class="section">
-        <img src="sss.jpg" alt="Shiva and Anushka">
-    </div>
+  <script>
+    const weddingDate = new Date("April 14, 2025 08:45:00").getTime();
+    const countdown = document.getElementById("countdown");
 
-    <footer>
-        Made with ❤️ by Naresh
-    </footer>
+    const timer = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = weddingDate - now;
 
-    <script>
-        const weddingDate = new Date("April 14, 2025 09:30:00").getTime();
-        const countdown = document.getElementById("countdown");
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        setInterval(function() {
-            const now = new Date().getTime();
-            const distance = weddingDate - now;
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            if (distance >= 0) {
-                countdown.innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds left`;
-            } else {
-                countdown.innerHTML = "The wedding ceremony has started!";
-            }
-        }, 1000);
-    </script>
+      if (distance <= 0) {
+        clearInterval(timer);
+        countdown.innerHTML = "💐 Happy Married Life Shiva Kumar ❤️ Pavithra 💐";
+      } else {
+        countdown.innerHTML = `${days} days ${hours} hours ${minutes} minutes ${seconds} seconds left`;
+      }
+    }, 1000);
+  </script>
 </body>
 </html>
